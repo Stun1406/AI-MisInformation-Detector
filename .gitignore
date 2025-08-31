@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env
+
+# Logs and data
+logs/*
+*.log
+data/*.csv  # Ignore samples if sensitive
+
+# Docker
+*.dockerignore
+
+# Misc
+.DS_Store
+*.swp
+*.swo
