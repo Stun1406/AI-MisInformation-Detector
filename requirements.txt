@@ -7,4 +7,8 @@ pydantic-settings>=2.2.0
 # Utilities
 python-dotenv>=1.0.0
 loguru>=0.7.0
-python-multipart>=0.0.6  # For file uploads
+python-multipart>=0.0.6
+
+# NLP Processing
+nltk>=3.8.1
+beautifulsoup4>=4.12.2
