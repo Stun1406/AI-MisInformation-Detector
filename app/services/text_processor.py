@@ -6,7 +6,6 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from app.core.config import settings
 
-# Download NLTK data
 try:
     nltk.data.find('tokenizers/punkt')
     nltk.data.find('corpora/stopwords')
@@ -22,11 +21,11 @@ class TextProcessor:
     def clean_text(self, text: str) -> str:
         """Clean text by removing HTML tags, URLs, and special characters."""
         logger.debug(f"Cleaning text: {text[:50]}...")
-        # Remove HTML tags
+        
         text = BeautifulSoup(text, "html.parser").get_text()
-        # Remove URLs
+
         text = re.sub(r'http[s]?://\S+', '', text)
-        # Remove special characters and extra whitespace
+
         text = re.sub(r'[^\w\s]', '', text)
         text = re.sub(r'\s+', ' ', text).strip()
         return text.lower()
