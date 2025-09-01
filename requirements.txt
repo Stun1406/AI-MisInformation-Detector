@@ -10,5 +10,7 @@ loguru>=0.7.0
 python-multipart>=0.0.6
 
 # NLP Processing
-nltk>=3.8.1
+spacy>=3.7.2
 beautifulsoup4>=4.12.2
+sentence-transformers>=2.7.0
+torch>=2.0.0
