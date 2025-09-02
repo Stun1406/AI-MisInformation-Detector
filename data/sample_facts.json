@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "text": "COVID vaccines are safe and effective, based on clinical trials.",
+    "source": "WHO"
+  },
+  {
+    "id": 2,
+    "text": "Vaccines do not cause autism; studies show no link.",
+    "source": "CDC"
+  },
+  {
+    "id": 3,
+    "text": "Microchips are not included in COVID vaccines.",
+    "source": "FDA"
+  }
+]
