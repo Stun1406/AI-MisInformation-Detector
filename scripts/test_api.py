@@ -14,6 +14,7 @@ def test_analyze_endpoint():
         response.raise_for_status()
         result = response.json()
         print(f"Claim: {result['claim']}")
+        print(f"Classification: {result['classification']}, Confidence: {result['confidence']:.3f}")
         print(f"Retrieved {len(result['similar_facts'])} similar facts:")
         for fact in result['similar_facts']:
             print(f"Fact ID: {fact['id']}, Text: {fact['text']}, Source: {fact['source']}, Similarity: {fact['similarity']:.3f}")
